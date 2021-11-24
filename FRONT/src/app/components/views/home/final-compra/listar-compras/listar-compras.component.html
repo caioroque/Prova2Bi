@@ -15,16 +15,8 @@
     </ng-container>
     <ng-container matColumnDef="formapag">
         <th mat-header-cell *matHeaderCellDef>Forma de Pagamento</th>
-        <td mat-cell *matCellDef="let venda">{{ venda.formapag!.tipo }}</td>
+        <td mat-cell *matCellDef="let venda">{{ venda.formapag }}</td>
     </ng-container>
-
-    <!-- Coluna do Categoria 
-    <ng-container matColumnDef="categoria">
-        <th mat-header-cell *matHeaderCellDef>Categoria</th>
-        <td mat-cell *matCellDef="let produto">
-            {{ produto.categoria!.nome }}
-        </td>
-    </ng-container>-->
 
     <tr mat-header-row *matHeaderRowDef="colunasExibidas"></tr>
     <tr mat-row *matRowDef="let row; columns: colunasExibidas"></tr>

@@ -9,7 +9,6 @@ namespace API.Models
         public int Id { get; set; }
         public string Cliente { get; set; }
         public List<ItemVenda> Itens { get; set; }
-
         public FormaPag FormaPag { get; set; }
         public int FormaPagId { get; set; }
         public DateTime CriadoEm { get; set; }

@@ -30,10 +30,9 @@ namespace API.Controllers
         //ALTERAR O MÉTODO PARA MOSTRAR TODOS OS DADOS DA VENDA E OS DADOS RELACIONADOS
         [HttpGet]
         [Route("list")]
-        public IActionResult List() =>
-            Ok(_context.Vendas
-            .Include(v => v.FormaPag)
-            .ToList());
-        
+        public IActionResult List()
+        {
+            return Ok(_context.Vendas.ToList());
+        }
     }
 }

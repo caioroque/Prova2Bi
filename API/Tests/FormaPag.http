@@ -1,0 +1,11 @@
+### Cadastrar um nova categoria
+POST https://localhost:5001/api/formapag/create
+Content-Type: application/json
+
+{
+    "Tipo" : "Crédito",
+    "Vezes" : "12"
+}
+
+### Listar todas as categorias
+GET https://localhost:5001/api/formapag/list
